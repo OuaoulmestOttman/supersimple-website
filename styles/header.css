@@ -1,0 +1,144 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  background-color: rgb(255, 253, 253);
+  border: 1px solid rgb(204, 204, 204);
+}
+
+.left-section {
+  display: flex;
+  justify-content: center;
+}
+.left-icons {
+  margin-left: 25px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.left-icons:hover .tooltip {
+  opacity: 1;
+}
+.hamburger-menu {
+  width: 23px;
+
+}
+.youtube-logo {
+  width: 90px;
+}
+
+.middle-section {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin-left: 70px;
+  margin-right: 35px;
+}
+.search-bar {
+  height: 9px;
+  flex: 1;
+  width: 0;
+  max-width: 330px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 1px;
+  box-shadow: inset 1px 2px 3px rgb(0, 0, 0, 0.05);
+  margin-top: 2px;
+}
+.search-bar::placeholder {
+  font-size: 16px;
+  color: rgb(204, 204, 204);
+}
+.bsearch-icon {
+  width: 60px;
+  height: 41px;
+  background-color: rgb(239, 239, 239);
+  margin: 0;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 1px;
+  border-left: none;
+  margin-top: 2px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.bvoice-search-icon {
+  width: 41px;
+  height: 41px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(239, 239, 239);
+  margin-left: 10px;
+  margin-top: 2px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.bsearch-icon img,.bvoice-search-icon img {
+  width: 23px;
+}
+.bsearch-icon:hover .tooltip,
+.bvoice-search-icon:hover .tooltip {
+  opacity: 1;
+}
+
+.right-section {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+}
+.right-icons {
+  width: 23px;
+  margin-right: 25px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.right-icons img {
+  width: 100%;
+  height: 100%;
+}
+.right-icons:hover .tooltip {
+  opacity: 1;
+}
+.notifications-number {
+  background-color: rgb(185, 22, 22);
+  color: white;
+  position: absolute;
+  top: 4px;
+  right: -4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -40px;
+  padding: 10px;
+  font-size: 11px;
+  background-color: rgb(131, 130, 130);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+

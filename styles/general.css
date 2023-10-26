@@ -1,0 +1,17 @@
+body {
+  height: 3000px;
+  padding: 40px 5px 5px 60px;
+  background-color: rgb(240, 240, 240);
+  font-family: roboto, Arial;
+}
+
+p {
+  margin: 0px;
+}
+
+a {
+  text-decoration-line: none;
+  margin: 0px;
+}
+
+/* u can type comment using this */
